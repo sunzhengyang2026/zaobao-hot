@@ -1,5 +1,6 @@
-const CACHE='brief-v2-2026-11-14-pm-1794802936';
+const CACHE='brief-v3-2026-11-16-1794803246';
 const ASSETS=['./index.html','./manifest.webmanifest',
+  "./issue-2026-11-16.html",
   "./issue-2026-11-14-pm.html",
   "./issue-2026-11-14.html"];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
